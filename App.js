@@ -34,7 +34,7 @@ export default class LoginView extends Component {
         <View style={styles.inputContainer}>
           <Image style={styles.inputIcon} source={{uri: 'https://png.icons8.com/message/ultraviolet/50/3498db'}}/>
           <TextInput style={styles.inputs}
-              placeholder="Username"
+              placeholder="User name"
               keyboardType="email-address"
               underlineColorAndroid='transparent'
               onChangeText={(email) => this.setState({email})}/>
@@ -64,6 +64,8 @@ export default class LoginView extends Component {
     );
   }
 }
+
+
 
 const styles = StyleSheet.create({
   container: {
